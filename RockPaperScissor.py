@@ -18,7 +18,6 @@ def display_choices(user_choice, computer_choice):
   print(f'You chose {emojis[user_choice]}')
   print(f'Computer chose {emojis[computer_choice]}')
 
-
 def determine_winner(user_choice, computer_choice):
   if user_choice == computer_choice:
     print('Tie!')
@@ -33,15 +32,10 @@ def determine_winner(user_choice, computer_choice):
 def play_game():
   while True:
     user_choice = get_user_choice()
-
     computer_choice = random.choice(choices)
-
     display_choices(user_choice, computer_choice)
-
     determine_winner(user_choice, computer_choice)
-
     should_continue = input('Continue? (y/n): ').lower()
     if should_continue == 'n':
       break
-
 play_game()
