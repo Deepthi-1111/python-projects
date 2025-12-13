@@ -5,13 +5,11 @@ def generate_secret():
   random.shuffle(digits)
   return ''.join([str(digit) for digit in digits[:4]])
 
-
 def calculate_cows_and_bulls(secret, guess):
   bulls = sum([1 for i in range(4) if guess[i] == secret[i]])
   cows = sum([1 for i in range(4) if guess[i] in secret]) - bulls
 
   return cows, bulls
-
 
 def main():
   secret = generate_secret()
@@ -29,6 +27,5 @@ def main():
     else:
       print('Invalid guess. Please enter a 4-digit number with unique digits.')
       
-
 if __name__ == '__main__':
   main()
