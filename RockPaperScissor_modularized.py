@@ -1,5 +1,7 @@
 #the popular refactoring technique : modularization applied to rock ,paper ,scissor code 
 
+#Add score tracking 🧮
+
 import random
 
 e = {'r':'🪨','p' : '📃','s':'✂️'}
