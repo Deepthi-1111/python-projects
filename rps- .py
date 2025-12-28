@@ -2,8 +2,6 @@
 
 import random
 
-
-
 e = {'r':'🪨','p' : '📃','s':'✂️'}
 def user_choice ():
     while True:    
