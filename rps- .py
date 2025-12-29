@@ -23,6 +23,8 @@ def play(user,comp):
     else:
         print('you lose')
 
+
+
 while True:
     user_global = user_choice()  # user is declared inside function so this step is to make it global      
     comp = random.choice(('r','p','s'))
