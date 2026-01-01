@@ -12,16 +12,6 @@ def user_choice ():
         else :
             return user                
 
-
-
-
-
-
-
-
-
-
-
 def play(user,comp):
     if user == comp:
         print("same")
