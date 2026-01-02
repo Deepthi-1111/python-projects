@@ -1,31 +1,31 @@
-#the popular refactoring technique : modularization applied to rock ,paper ,scissor code 
-
 import random
 
-e = {'r':'🪨','p' : '📃','s':'✂️'}
+a = {'r' : 'rock' ,'p' : 'paper' , 's' : 'scissors' }
+e = {'rock':'🪨','paper' : '📃','scissors':'✂️'}
+choices = tuple(e.keys())
 def user_choice ():
     while True:    
         user = input('enter the input :').lower()
-        if user not in ('r' , 'p' , 's') :
+        if user not in a :
             print("invalid input , try again ")
             continue
         else :
-            return user                
+            return a[user]                
 
 def play(user,comp):
     if user == comp:
         print("same")
     elif (
-        (user == 'r' and comp == 's') or 
-        (user == 'p' and comp == 'r') or
-        (user == 's' and comp == 'p') ):
+        (user == 'rock' and comp == 'scissors') or 
+        (user == 'paper' and comp == 'rock') or
+        (user == 'scissors' and comp == 'paper') ):
         print('you win')
     else:
         print('you lose')
 
 while True:
-    user_global = user_choice()  # user is declared inside function so this step is to make it global      
-    comp = random.choice(('r','p','s'))
+    user_global = user_choice()              
+    comp = random.choice(choices)
     print('you chose :',e[user_global])
     print('computer choose :',e[comp])
 
@@ -34,7 +34,3 @@ while True:
     b = input('y/n : ').lower()
     if b == 'n':
         break
-
-
-
-
