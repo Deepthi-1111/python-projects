@@ -7,3 +7,8 @@ qr.add_data(data)
 image = qr.make_image(fill_color='green', back_color='violet')#default black and white
 image.save(filename)
 print(f'QR code saved as {filename}')#for confirmation 
+
+
+
+
+
