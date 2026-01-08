@@ -4,9 +4,6 @@ def val():
         if st == rupee:
             
 # input
-
-
-            
 # currency of input
 
 
