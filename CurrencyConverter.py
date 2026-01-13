@@ -8,14 +8,8 @@ def val():
 
             
 # currency of input
-
-
-
             
 # to change
-            
-
-
             
 # output print
 
