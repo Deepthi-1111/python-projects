@@ -1,4 +1,4 @@
-# fun with val of each curr
+⁹# fun with val of each curr
 def val():
     if ic == USD:
         if st == rupee:
@@ -12,13 +12,3 @@ def val():
 # to change
             
 # output print
-
-
-
-
-
-
-
-
-
-
