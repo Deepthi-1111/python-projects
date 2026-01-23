@@ -7,6 +7,8 @@ def add_person():
     return person
 
 
+
+
 def display_people(people):
     for i, person in enumerate(people):
         print(i + 1, "-", person["name"], "|", person["age"], "|", person["email"])
